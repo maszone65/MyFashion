@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>আমার পোশাকের দোকান</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5}
+header{background:#222;color:#fff;padding:20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+.card{background:#fff;padding:15px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+img{width:100%;border-radius:8px}
+button{background:#007bff;color:#fff;border:none;padding:10px 15px;border-radius:6px;cursor:pointer}
+footer{text-align:center;padding:20px;background:#222;color:#fff}
+</style>
+</head>
+<body>
+<header>
+<h1>আমার পোশাকের দোকান</h1>
+<p>স্টাইলিশ পোশাক সাশ্রয়ী দামে</p>
+</header>
+
+<section class="grid">
+<div class="card">
+<img src="https://via.placeholder.com/300x350?text=T-Shirt">
+<h3>টি-শার্ট</h3>
+<p>দাম: ৬৫০ টাকা</p>
+<button onclick="order('টি-শার্ট')">অর্ডার করুন</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x350?text=Shirt">
+<h3>শার্ট</h3>
+<p>দাম: ১২০০ টাকা</p>
+<button onclick="order('শার্ট')">অর্ডার করুন</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x350?text=Panjabi">
+<h3>পাঞ্জাবি</h3>
+<p>দাম: ১৫০০ টাকা</p>
+<button onclick="order('পাঞ্জাবি')">অর্ডার করুন</button>
+</div>
+</section>
+
+<footer>
+যোগাযোগ: 01XXXXXXXXX | বিকাশ/নগদ: 01XXXXXXXXX
+</footer>
+
+<script>
+function order(product){
+alert(product+" অর্ডার করতে আপনার WhatsApp বা Google Form লিংক যুক্ত করুন।");
+}
+</script>
+</body>
+</html>
